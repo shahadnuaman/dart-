@@ -52,5 +52,10 @@ void task2() {
     Separate even numbers from the above `numbers` list.
     List<int> evenNumbers = ...
   */
+    for (final i in numbers) {
+
+  String evenNumbers = i %2 == 0?'even':'odd'
   print('evenNumbers: $evenNumbers');
+    }
+  
 }
