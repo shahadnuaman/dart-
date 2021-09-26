@@ -17,6 +17,12 @@ class View {
   }
 }
 
+
+
+        class Text extends View{
+            String  content ;
+  Text({int id , this.content, {Color? color}) : super(id, color: color)
+}
 void main() {
   /*
     1) Create class named `Text` that extends/inherits `View` class,
@@ -27,11 +33,13 @@ void main() {
       var helloText = Text(<random id>, content: 'Hello' )
   */
 
-        class Text extends View{
-            String  content ;
-  Text({int id , this.content, {Color? color}) : super(id, color: color)
-}
         
+
+  var helloText =  Text();
+helloText.id=id ; 
+  helloText.content = 'Hello  shahad';
+  
+print('hello: $helloText');
 
   int id = Random().nextInt(10000);
 
