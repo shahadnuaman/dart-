@@ -35,14 +35,13 @@ void main() {
 
         
 
-  var helloText =  Text();
+
+
+  int id = Random().nextInt(10000);
+    var helloText =  Text();
 helloText.id=id ; 
   helloText.content = 'Hello  shahad';
   
-print('hello: $helloText');
-
-  int id = Random().nextInt(10000);
-
   print('hello: $helloText');
 }
 
